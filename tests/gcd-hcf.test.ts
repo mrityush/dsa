@@ -1,23 +1,23 @@
-import { gcd } from '../maths/gcd-hcf';
+import {MathUtils} from "../maths/gcd-hcf";
 
 describe('gcd', () => {
   test('gcd of 48 and 18 should be 6', () => {
-    expect(gcd(48, 18)).toBe(6);
+    expect(MathUtils.gcd(48, 18)).toBe(6);
   });
 
   test('gcd of 101 and 103 should be 1', () => {
-    expect(gcd(101, 103)).toBe(1);
+    expect(MathUtils.gcd(101, 103)).toBe(1);
   });
 
   test('gcd of 0 and 5 should be 5', () => {
-    expect(gcd(0, 5)).toBe(5);
+    expect(MathUtils.gcd(0, 5)).toBe(5);
   });
 
   test('gcd of 5 and 0 should be 5', () => {
-    expect(gcd(5, 0)).toBe(5);
+    expect(MathUtils.gcd(5, 0)).toBe(5);
   });
 
   test('gcd of 0 and 0 should be 0', () => {
-    expect(gcd(0, 0)).toBe(0);
+    expect(MathUtils.gcd(0, 0)).toBe(0);
   });
 });
