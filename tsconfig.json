@@ -1,6 +1,15 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    // other options...
-  }
+    "target": "ESNext",                // Or use "ES6" or any other version of your choice
+    "module": "commonjs",              // Or "ESNext" based on your use case
+    "strict": true,                    // Enables all strict type checking options
+    "esModuleInterop": true,           // Ensures compatibility with CommonJS modules
+    "skipLibCheck": true,              // Skips type checking of declaration files
+    "forceConsistentCasingInFileNames": true,  // Enforces consistent casing in file names
+    "experimentalDecorators": true,    // Enable experimental decorators
+    "emitDecoratorMetadata": true      // Emit metadata for decorators
+  },
+  "include": [
+    "src/**/*.ts"  // Ensure your TypeScript source files are included
+  ]
 }
